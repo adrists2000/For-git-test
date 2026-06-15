@@ -1,3 +1,19 @@
-#adrists2000.github.io
+# 股市投資個人網站
 
-stock web
+台灣股市價值投資個人網站，分享選股方法與財報四大表分析重點。
+
+## 專案結構
+
+```
+├── index.html      # 首頁：選股方法
+├── Page1.html      # 綜合損益表
+├── Page2.html      # 資產負債表
+├── Page3.html      # 現金流量表
+├── Page4.html      # 股東權益變動表
+├── css/styles.css  # 共用樣式
+└── js/main.js      # 導覽與搜尋功能
+```
+
+## 本地預覽
+
+直接用瀏覽器開啟 `index.html`，或使用任何靜態伺服器即可。

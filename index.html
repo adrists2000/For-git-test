@@ -1,279 +1,135 @@
 ﻿<!DOCTYPE html>
-
-<html>
-
+<html lang="zh-TW">
 <head>
-
-    <title> 股市投資個人網站 </title>
-
-    <style>
-
-        *
-        {
-            margin:      auto;
-            padding:     0px;
-            box-sizing:  border-box;
-            font-family: serif;
-            line-height:   1.0;
-            font-size:    14pt;
-        }
-
-        a {text-decoration:none;}
-        a:hover {text-decoration:underline;}             /* 記得語法! */ 
- 
-        body
-        {
-            width:   1280px;                             /* 內容: 高度1760px,寬度1280px */
-            margin:  auto;
-            background: white;
-        }
-
-            header
-            {
-                height:      100px;                     /* 高度100px */
-              /*  background-image: url(header1.jpg);   */                          /* 記得語法! */  
-                overflow:         hidden ;   
-                background: hsla(30,0%,25%,1);
-            }
-
-                div#header_div1   
-                {                    
-                    height:       75px; 
-                    padding:      10px 0px 0px 15px;                   
-                    text-align:   left;
-                }  
-                    div#header_div1 a
-                    {
-                        font-size:24pt;
-                        color:        hsla(30,100%,63%,1);
-                    }   
-                   
-
-                div#header_div2
-                {
-                    height:       25px; 
-                    width:       360px;                      /* 寬度360px */
-                    padding-left: 15px;                
-                    float:        left;
-                    text-align:   left;
-                    color   : hsla(30,0%,92%,1);
-                } 
-
-                div#header_div3
-                {
-                    height:       25px; 
-                    width:       600px;                      /* 寬度640px */
-                    float:        left;
-                } 
-                    th.header_div3_th1
-                    {               
-                        padding     : 0px 15px 0px 10px;
-                        border-right: 1px solid black;
-                        border-left : 1px solid black;    
-                    }
-                    th.header_div3_th2
-                    {               
-                        padding     : 0px 15px 0px 10px;
-                        border-right: 1px solid black;
-                    }
-                        th a  
-                        {
-                            color   : hsla(30,0%,92%,1);
-                        }
-                div#header_div4
-                {
-                    height:       25px; 
-                    width:       320px;                      /* 寬度320px */
-                    float:        left;  
-                    padding: 0px 0px 10px 0px;               
-                }
-
-            div#content
-            {
-                height:     760px;                           /* 高度760px 寬度960px */
-            }
-        
-                section
-                {
-                    height:  760px;
-                    width:   960px;
-                    float:    left;
-                    padding:  20px;
-                    border-left: 1px solid hsla(30,0%,25%,0.6);
-                }
-
-                    div#section_div1
-                    {
-                        height:  760px;
-                        width:   960px;
-                    }
-
-
-                aside
-                {
-                    height:  760px;
-                    width:   320px;
-                    padding:  10px;
-                    float:    right;   
-                    background: hsla(30,100%,50%,0.5);            
-                }
-                    aside a
-                    {
-                        color:       black;
-                        font-size:    16pt;
-                    }
-                    aside h3
-                    {
-                        font-size:      18pt;
-                        text-align:   center; 
-                        color: hsla(270,50%,50%,0.7);
-                    }
-
-            footer
-            {
-                height:  100px;                             /* 高度100px */
-                text-align:  center;
-                background: hsla(240,50%,45%,1);
-            }
-
-    </style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="股市投資個人網站 — 價值投資選股方法與財報分析指南">
+    <title>股市投資個人網站</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-
-
-
 <body>
-    
-    <header> 
+<div class="page-wrapper">
 
-        <div id="header_div1">
-            <h1 > <a href="index.html" target="_self"> 股市投資個人網站 </a> </h1>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="site-logo">
+                <span class="logo-icon">📈</span>
+                股市投資個人網站
+            </a>
+            <nav class="site-nav" aria-label="主要導覽">
+                <a href="index.html" class="nav-link">首頁</a>
+                <a href="Page1.html" class="nav-link">綜合損益表</a>
+                <a href="Page2.html" class="nav-link">資產負債表</a>
+                <a href="Page3.html" class="nav-link">現金流量表</a>
+                <a href="Page4.html" class="nav-link">股東權益變動表</a>
+            </nav>
+            <div class="header-search">
+                <input type="search" class="search-input" placeholder="搜尋內容…" aria-label="搜尋">
+                <button type="button" class="search-btn">搜尋</button>
+            </div>
+            <button class="menu-toggle" aria-label="開啟選單" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
         </div>
-        <div id="header_div2">
-             <b> 關於網站 </b>
-        </div>
-        <div id="header_div3">                  
-            <table>
-                <tr>
-                    <th class="header_div3_th1"> 
-                       <a href="Page1.html" target="_self"> 綜合損益表 </a>
-                    </th>
-                    <th class="header_div3_th2"> 
-                       <a href="Page2.html" target="_self"> 資產負債表 </a>
-                    </th>
-                    <th class="header_div3_th2"> 
-                       <a href="Page3.html" target="_self"> 現金流量表 </a>
-                    </th>
-                    <th class="header_div3_th2"> 
-                       <a href="Page4.html" target="_self"> 股東權益變動表 </a>
-                    </th>    
-                </tr>
-            </table>  
-        </div>
-        <div id="header_div4"> 
-            <input type="text" /> <input type="submit" value="搜尋" />
-        </div>
-
     </header>
 
-    <div id="content">
-        
-        <section>
-           <div id="section_div1"> 
-               <br/> 
-               <h3 style="color: hsla(240,100%,70%,1);font-size:18pt;"> 作者選股方式 : </h3>
-               <br/>
-               <br/>
-               <p> 1.首先檢查 </p>
-               <br/>
-               <pre> - 產業 (民生產業 非景氣循環股 有寡佔獨佔性質或產業前兩名 具備護城河條件者 優先考慮) </pre>
-               <br/>
-               <pre> - 稅後盈餘     (獲利)  穩定度 </pre>
-               <br/>
-               <pre> - 股價             (本金)  穩定度 </pre>
-               <br/>
-               <pre> - 現金殖利率 (利息)  穩定度 </pre> 
-               <br/>          
-   
-               <br/>
-               <p> 2.接著檢查 </p>
-               <br/>
-               <p> ( 營收 / 毛利 / 營業利益 / 業外損益 / 稅後淨利 ) </p>
-               <br/>
-               <p> ( EPS / PER / PBR / ROE / ROA ) </p>
-               <br/>
-               <p> ( 負債比 / 流動比 / 速動比 / 利息保障倍數 ) </p>
-               <br/>
-               <p> ( 應收帳款 / 應付帳款 / 存貨 / 固定資產 / 總資產  之 周轉率) </p>
-               <br/>
-               <p> ( 營業現金流量 / 自由現金流量 / 淨現金流量 ) </p>
-               <br/>
-			   <p> 時間=2026-6-15,11:30 </p>
-			   
-               <br/>	
-               <br/>			   
-               <p> 3.其他檢查 </p>
-               <br/>
-               <p> - 籌碼面: 董監持股 / 三大法人持股 / 持股等級比率 </p>
-               <br/>
-               <p> - 消息面: CMoney / MoneyDJ / 財報狗 / PTT </p>
-               <br/>
-               <p> - 研究年報 </p>
-               <br/>
+    <main class="main-content">
+        <div class="container">
+            <div class="content-grid">
 
-           </div>
+                <div class="primary">
+                    <section class="hero">
+                        <span class="hero-badge">Value Investing</span>
+                        <h1>系統化選股，從財報出發</h1>
+                        <p>以基本面分析為核心，透過四大財務報表與關鍵指標，篩選具護城河與穩定獲利的優質標的。</p>
+                    </section>
 
-        </section>
+                    <div class="steps">
+                        <div class="step">
+                            <div class="step-num">1</div>
+                            <div class="step-body">
+                                <h3>初步篩選 — 穩定性檢查</h3>
+                                <div class="step-tags">
+                                    <span class="tag highlight">民生產業 / 非景氣循環股</span>
+                                    <span class="tag highlight">產業前兩名 / 具護城河</span>
+                                    <span class="tag">稅後盈餘穩定度</span>
+                                    <span class="tag">股價穩定度</span>
+                                    <span class="tag">現金殖利率穩定度</span>
+                                </div>
+                            </div>
+                        </div>
 
-        <aside>
-            <br/>
-            <h3> 下載選股工具 </h3>
-            <br/>
-            <br/>
-            <a href="https://drive.google.com/drive/folders/1Tih3q3JQbg7qU3J81afbeUZCVqMLb9zO?usp=sharing" target="_blank"> - 選股小程式(視窗版) </a>
-            <br/>
-            <br/>
-            <a href="https://drive.google.com/drive/folders/1Tih3q3JQbg7qU3J81afbeUZCVqMLb9zO?usp=sharing" target="_blank"> - 選股小程式(命令列版) </a>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <h3> 投資網站連結 </h3> 
-            <br/>
-            <a href="https://www.cmoney.tw/finance/" target="_blank" > - CMONEY </a>
-            <br/>
-            <br/>
-            <a href="https://statementdog.com" target="_blank" > - 財報狗 </a>
-            <br/>
-            <br/>
-            <a href="https://tw.stock.yahoo.com/" target="_blank"> - Yahoo奇摩股市 </a>
-            <br/>
-            <br/>
-            <a href="https://goodinfo.tw/StockInfo/index.asp" target="_blank"> - 台灣股市資訊網 </a>
-            <br/>
-            <br/>
-            <a href="http://www.twse.com.tw/zh/" target="_blank"> - 台灣證券交易所 </a>
-            <br/>
-            <br/>
-            <a href="http://www.tpex.org.tw/web/index.php?l=zh-tw" target="_blank"> - 證券櫃檯買賣中心 </a>
-            <br/>
-            <br/>
-            <a href="http://mops.twse.com.tw/mops/web/index" target="_blank"> - 公開資訊觀測站 </a>
+                        <div class="step">
+                            <div class="step-num">2</div>
+                            <div class="step-body">
+                                <h3>財報深度分析</h3>
+                                <div class="step-tags">
+                                    <span class="tag">營收 / 毛利 / 營業利益 / 業外損益 / 稅後淨利</span>
+                                    <span class="tag">EPS / PER / PBR / ROE / ROA</span>
+                                    <span class="tag">負債比 / 流動比 / 速動比 / 利息保障倍數</span>
+                                    <span class="tag">應收帳款 / 應付帳款 / 存貨 / 固定資產 / 總資產周轉率</span>
+                                    <span class="tag">營業現金流量 / 自由現金流量 / 淨現金流量</span>
+                                </div>
+                            </div>
+                        </div>
 
-        </aside>
+                        <div class="step">
+                            <div class="step-num">3</div>
+                            <div class="step-body">
+                                <h3>其他面向檢查</h3>
+                                <div class="step-tags">
+                                    <span class="tag">籌碼面：董監持股 / 三大法人 / 持股等級比率</span>
+                                    <span class="tag">消息面：CMoney / MoneyDJ / 財報狗 / PTT</span>
+                                    <span class="tag">研究年報</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-    </div>
+                    <p class="search-no-result">找不到符合的內容，請嘗試其他關鍵字。</p>
+                </div>
 
-    <footer> 
-        <br/>
-        <h2 style="font-size:16pt"> Copyright ©2018 All Rights Reserved </h2>
-        <br/>        
-        <p> 聯絡資訊 email: adrists2000@hotmail.com </p>
+                <aside class="sidebar">
+                    <div class="sidebar-card">
+                        <h3>下載選股工具</h3>
+                        <div class="sidebar-links">
+                            <a href="https://drive.google.com/drive/folders/1Tih3q3JQbg7qU3J81afbeUZCVqMLb9zO?usp=sharing" target="_blank" rel="noopener" class="download-btn">
+                                🖥️ 選股小程式（視窗版）
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/1Tih3q3JQbg7qU3J81afbeUZCVqMLb9zO?usp=sharing" target="_blank" rel="noopener" class="download-btn" style="margin-top:8px">
+                                ⌨️ 選股小程式（命令列版）
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sidebar-card">
+                        <h3>投資網站連結</h3>
+                        <div class="sidebar-links">
+                            <a href="https://www.cmoney.tw/finance/" target="_blank" rel="noopener" class="sidebar-link external"><span class="link-icon">💰</span> CMoney</a>
+                            <a href="https://statementdog.com" target="_blank" rel="noopener" class="sidebar-link external"><span class="link-icon">🐕</span> 財報狗</a>
+                            <a href="https://tw.stock.yahoo.com/" target="_blank" rel="noopener" class="sidebar-link external"><span class="link-icon">📊</span> Yahoo 奇摩股市</a>
+                            <a href="https://goodinfo.tw/StockInfo/index.asp" target="_blank" rel="noopener" class="sidebar-link external"><span class="link-icon">📈</span> 台灣股市資訊網</a>
+                            <a href="https://www.twse.com.tw/zh/" target="_blank" rel="noopener" class="sidebar-link external"><span class="link-icon">🏛️</span> 台灣證券交易所</a>
+                            <a href="https://www.tpex.org.tw/web/index.php?l=zh-tw" target="_blank" rel="noopener" class="sidebar-link external"><span class="link-icon">🏪</span> 證券櫃檯買賣中心</a>
+                            <a href="https://mops.twse.com.tw/mops/web/index" target="_blank" rel="noopener" class="sidebar-link external"><span class="link-icon">📋</span> 公開資訊觀測站</a>
+                        </div>
+                    </div>
+                </aside>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p class="footer-brand"><strong>股市投資個人網站</strong> — Copyright © 2026 All Rights Reserved</p>
+            <p class="footer-contact">聯絡：<a href="mailto:adrists2000@hotmail.com">adrists2000@hotmail.com</a></p>
+        </div>
     </footer>
-    
+
+</div>
+<script src="js/main.js"></script>
 </body>
-
-
 </html>
