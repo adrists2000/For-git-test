@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+<a href="#main-content" class="skip-link">跳到主要內容</a>
 <div class="page-wrapper">
 
     <header class="site-header">
@@ -36,18 +37,48 @@
         </div>
     </header>
 
-    <main class="main-content">
+    <main class="main-content" id="main-content">
         <div class="container">
             <div class="content-grid">
 
                 <div class="primary">
                     <section class="hero">
-                        <span class="hero-badge">Value Investing</span>
-                        <h1>系統化選股，從財報出發</h1>
-                        <p>以基本面分析為核心，透過四大財務報表與關鍵指標，篩選具護城河與穩定獲利的優質標的。</p>
+                        <div class="hero-kicker">
+                            <span class="hero-badge">Value Investing</span>
+                            <span class="hero-date">Financial Research Desk</span>
+                        </div>
+                        <h1>用一套清楚的財報流程，留下值得追蹤的股票</h1>
+                        <p>把選股拆成產業、獲利、體質、現金流與股東回報五個檢查點，讓每一次研究都有固定順序，也更容易回頭比較。</p>
+                        <div class="hero-actions">
+                            <a href="Page1.html" class="action-primary">檢查獲利能力</a>
+                            <a href="Page2.html" class="action-secondary">檢查財務體質</a>
+                        </div>
                     </section>
 
-                    <div class="steps">
+                    <section class="report-grid" aria-label="財報分析入口">
+                        <a href="Page1.html" class="report-card">
+                            <span class="report-number">01</span>
+                            <h2>綜合損益表</h2>
+                            <p>看營收、毛利、營業利益與 EPS，確認公司是否穩定賺錢。</p>
+                        </a>
+                        <a href="Page2.html" class="report-card">
+                            <span class="report-number">02</span>
+                            <h2>資產負債表</h2>
+                            <p>看資產配置、負債壓力與償債能力，避開體質過弱的標的。</p>
+                        </a>
+                        <a href="Page3.html" class="report-card">
+                            <span class="report-number">03</span>
+                            <h2>現金流量表</h2>
+                            <p>用營業現金流和自由現金流驗證獲利品質。</p>
+                        </a>
+                        <a href="Page4.html" class="report-card">
+                            <span class="report-number">04</span>
+                            <h2>股東權益變動表</h2>
+                            <p>觀察股利政策、分配率與公司對股東回報的態度。</p>
+                        </a>
+                    </section>
+
+                    <div class="steps" aria-label="選股研究流程">
                         <div class="step">
                             <div class="step-num">1</div>
                             <div class="step-body">
@@ -58,7 +89,6 @@
                                     <span class="tag">稅後盈餘穩定度</span>
                                     <span class="tag">股價穩定度</span>
                                     <span class="tag">現金殖利率穩定度</span>
-									<span class="tag">branch=main ,commit5</span>
                                 </div>
                             </div>
                         </div>
@@ -100,7 +130,7 @@
                             <a href="https://drive.google.com/drive/folders/1Tih3q3JQbg7qU3J81afbeUZCVqMLb9zO?usp=sharing" target="_blank" rel="noopener" class="download-btn">
                                 🖥️ 選股小程式（視窗版）
                             </a>
-                            <a href="https://drive.google.com/drive/folders/1Tih3q3JQbg7qU3J81afbeUZCVqMLb9zO?usp=sharing" target="_blank" rel="noopener" class="download-btn" style="margin-top:8px">
+                            <a href="https://drive.google.com/drive/folders/1Tih3q3JQbg7qU3J81afbeUZCVqMLb9zO?usp=sharing" target="_blank" rel="noopener" class="download-btn">
                                 ⌨️ 選股小程式（命令列版）
                             </a>
                         </div>

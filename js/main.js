@@ -10,9 +10,21 @@
     toggle.addEventListener("click", function () {
       var isOpen = nav.classList.toggle("open");
       toggle.setAttribute("aria-expanded", isOpen);
+      toggle.classList.toggle("is-open", isOpen);
       if (searchBar) {
         searchBar.classList.toggle("mobile-visible", isOpen);
       }
+    });
+
+    nav.querySelectorAll(".nav-link").forEach(function (link) {
+      link.addEventListener("click", function () {
+        nav.classList.remove("open");
+        toggle.classList.remove("is-open");
+        toggle.setAttribute("aria-expanded", "false");
+        if (searchBar) {
+          searchBar.classList.remove("mobile-visible");
+        }
+      });
     });
   }
 
@@ -34,7 +46,7 @@
     if (!searchInput) return;
     var query = searchInput.value.trim().toLowerCase();
     var items = document.querySelectorAll(
-      ".step, .item, .card, .tag, .sidebar-link, p"
+      ".hero, .report-card, .step, .card, .item, .sidebar-link, .download-btn"
     );
     var anyVisible = false;
 
